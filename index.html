@@ -10,29 +10,23 @@
     
 
 <div class="container">
-    <div class="navbar">
-        <img src="logo.png" alt="logo" class="logo">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Specifications</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Connect</a></li>
-        </ul>
-    </div>
 
     <div class="content">
         <div class="left-col">
-            <h1>The <br> Real <br> Sound</h1>
+            <h1>Hassan<br> Studio</h1>
         </div>
         <div class="tracks">
         <div class="right-col">
             <p>Mustafa Ya Mustafa</p>
-            <img src="play.png" alt="play icon" id="icon">
+            <img src="play.png" alt="play icon" id="icon" class="icons">
         </div>
         <div class="right-col">
             <p>Ae Khatm-e-Rusool</p>
-            <img src="play.png" alt="play icon" id="icon1">
+            <img src="play.png" alt="play icon" id="icon1" class="icons">
+        </div>
+        <div class="right-col">
+            <p>Darbar ma hazir ha..</p>
+            <img src="play.png" alt="play icon" id="icon2" class="icons">
         </div>
     </div>
     </div>
@@ -43,6 +37,9 @@
 </audio>
 <audio id="mysong1">
     <source src="audio1.mp3" type="audio/mp3">
+</audio>
+<audio id="mysong2">
+    <source src="audio3.mp3" type="audio/mp3">
 </audio>
 
 
@@ -77,6 +74,21 @@ icon1.onclick = function(){
         icon1.src = 'play.png'
      }
 }
+
+let mysong2 = document.getElementById('mysong2');
+let icon2 = document.getElementById('icon2');
+
+icon2.onclick = function(){
+     if(mysong2.paused){
+        mysong2.play();
+        icon2.src = 'pause.png'
+     }
+     else{
+        mysong2.pause();
+        icon2.src = 'play.png'
+     }
+}
+
 
 
 
