@@ -36,7 +36,18 @@
         <p>Darbar ma hazir ha..</p>
     </div>
 
- </div>
+    </div> <!-- end row  -->
+
+    <!-- start row -->
+    <div id="naats" class="row mt-5">
+        <div class="col-sm-4 text-center">
+            <img src="play.png" alt="play icon" id="icon3" class="icons">
+            <p>The way of tears</p>
+        </div>
+        </div>
+
+    
+
 </div>
 </div>
 
@@ -49,6 +60,9 @@
 </audio>
 <audio id="mysong2">
     <source src="audio3.mp3" type="audio/mp3">
+</audio>
+<audio id="mysong3">
+    <source src="audio4.mp3" type="audio/mp3">
 </audio>
 
 
@@ -98,6 +112,19 @@ icon2.onclick = function(){
      }
 }
 
+let mysong3 = document.getElementById('mysong3');
+let icon3 = document.getElementById('icon3');
+
+icon3.onclick = function(){
+     if(mysong3.paused){
+        mysong3.play();
+        icon3.src = 'pause.png'
+     }
+     else{
+        mysong3.pause();
+        icon3.src = 'play.png'
+     }
+}
 
 
 
