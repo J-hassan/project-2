@@ -36,18 +36,35 @@
         <p>Darbar ma hazir ha..</p>
     </div>
 
-    </div> <!-- end row  -->
+    </div> 
+    <!-- end row  -->
 
     <!-- start row -->
-    <div id="naats" class="row mt-5">
+    <div class="row mt-md-5">
         <div class="col-sm-4 text-center">
             <img src="play.png" alt="play icon" id="icon3" class="icons">
             <p>The way of tears</p>
         </div>
+        <div class="col-sm-4 text-center">
+            <img src="play.png" alt="play icon" id="icon4" class="icons">
+            <p>Pardadari</p>
         </div>
-
+        <div class="col-sm-4 text-center">
+            <img src="play.png" alt="play icon" id="icon5" class="icons">
+            <p>Shikwa</p>
+        </div>
+    </div>
+ <!-- end row -->
     
-
+    <!-- start row -->
+    <div class="row mt-md-5">
+        <div class="col-sm-4 text-center">
+            <img src="play.png" alt="play icon" id="icon6" class="icons">
+            <p>Jawab-e-shikwa</p>
+        </div>
+    </div>
+ <!-- end row -->
+    
 </div>
 </div>
 
@@ -63,6 +80,15 @@
 </audio>
 <audio id="mysong3">
     <source src="audio4.mp3" type="audio/mp3">
+</audio>
+<audio id="mysong4">
+    <source src="pardadri.mp3" type="audio/mp3">
+</audio>
+<audio id="mysong5">
+    <source src="shikwa.mp3" type="audio/mp3">
+</audio>
+<audio id="mysong6">
+    <source src="jawab-e-shikwa.mp3" type="audio/mp3">
 </audio>
 
 
@@ -126,8 +152,47 @@ icon3.onclick = function(){
      }
 }
 
+let mysong4 = document.getElementById('mysong4');
+let icon4 = document.getElementById('icon4');
 
+icon4.onclick = function(){
+     if(mysong4.paused){
+        mysong4.play();
+        icon4.src = 'pause.png'
+     }
+     else{
+        mysong4.pause();
+        icon4.src = 'play.png'
+     }
+}
 
+let mysong5 = document.getElementById('mysong5');
+let icon5 = document.getElementById('icon5');
+
+icon5.onclick = function(){
+     if(mysong5.paused){
+        mysong5.play();
+        icon5.src = 'pause.png'
+     }
+     else{
+        mysong5.pause();
+        icon5.src = 'play.png'
+     }
+}
+
+let mysong6 = document.getElementById('mysong6');
+let icon6 = document.getElementById('icon6');
+
+icon6.onclick = function(){
+     if(mysong6.paused){
+        mysong6.play();
+        icon6.src = 'pause.png'
+     }
+     else{
+        mysong6.pause();
+        icon6.src = 'play.png'
+     }
+}
 
 </script>
 
