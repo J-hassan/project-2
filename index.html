@@ -16,186 +16,76 @@
     </div>
 </div>
 
-<div id="audio-section" class="container-fluid">
-    <div class="container">
-    <div class="heading">
-        <h2 class="text-center text-uppercase">Naats Collection</h2>
-    </div>
-      
- <div id="naats" class="row mt-5">
-    <div class="col-sm-4 text-center">
-        <img src="play.png" alt="play icon" id="icon" class="icons">
-        <p>Mustafa Ya Mustafa</p>
-    </div>
-    <div class="col-sm-4 text-center">
-        <img src="play.png" alt="play icon" id="icon1" class="icons">
-        <p>Ae Khatm-e-Rusool</p>
-    </div>
-    <div class="col-sm-4 text-center">
-        <img src="play.png" alt="play icon" id="icon2" class="icons">
-        <p>Darbar ma hazir ha..</p>
+
+
+<div class="audio-section ">
+
+    <div class="naats">
+        <h2 class="text-center">Naats Collection</h2>
     </div>
 
-    </div> 
-    <!-- end row  -->
 
-    <!-- start row -->
-    <div class="row mt-md-5">
-        <div class="col-sm-4 text-center">
-            <img src="play.png" alt="play icon" id="icon3" class="icons">
-            <p>The way of tears</p>
-        </div>
-        <div class="col-sm-4 text-center">
-            <img src="play.png" alt="play icon" id="icon4" class="icons">
-            <p>Pardadari</p>
-        </div>
-        <div class="col-sm-4 text-center">
-            <img src="play.png" alt="play icon" id="icon5" class="icons">
-            <p>Shikwa</p>
-        </div>
+<div class="container">
+
+
+<div class="row">
+    <div class="col-md-5">
+        <audio id="mysong1" controls>
+            <source src="audio1.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">Mustafa ya Mustafa</p>
     </div>
- <!-- end row -->
-    
-    <!-- start row -->
-    <div class="row mt-md-5">
-        <div class="col-sm-4 text-center">
-            <img src="play.png" alt="play icon" id="icon6" class="icons">
-            <p>Jawab-e-shikwa</p>
-        </div>
+    <div class="col-md-5">
+        <audio id="mysong2" controls>
+            <source src="audio2.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">Aee Khatem-e-Rusool</p>
     </div>
- <!-- end row -->
-    
-</div>
 </div>
 
-<!-- audio section -->
-<audio id="mysong">
-    <source src="audio2.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong1">
-    <source src="audio1.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong2">
-    <source src="audio3.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong3">
-    <source src="audio4.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong4">
-    <source src="pardadri.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong5">
-    <source src="shikwa.mp3" type="audio/mp3">
-</audio>
-<audio id="mysong6">
-    <source src="jawab-e-shikwa.mp3" type="audio/mp3">
-</audio>
+<div class="row">
+    <div class="col-md-5">
+        <audio id="mysong3" controls>
+            <source src="audio3.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">Darbar ma hazir ha</p>
+     </div>
+     <div class="col-md-5">
+        <audio id="mysong4" controls>
+            <source src="audio4.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">The way of tears</p>
+     </div>
+</div>
 
 
+<div class="row">
+    <div class="col-md-5">
+        <audio id="mysong3" controls>
+            <source src="pardadri.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">Pardadari</p>
+     </div>
+     <div class="col-md-5">
+        <audio id="mysong4" controls>
+            <source src="shikwa.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">Shikwa</p>
+     </div>
+</div>
 
-<script>
 
+<div class="row">
+    <div class="col-md-5">
+        <audio id="mysong3" controls>
+            <source src="jawab-e-shikwa.mp3" type="audio/mp3">
+        </audio>
+        <p class="text-center">jawab-e-shikwa</p>
+     </div>
+</div>
 
-let mysong = document.getElementById('mysong');
-let icon = document.getElementById('icon');
-
-icon.onclick = function(){
-     if(mysong.paused){
-        mysong.play();
-        icon.src = 'pause.png'
-     }
-     else{
-        mysong.pause();
-        icon.src = 'play.png'
-     }
-}
-
-let mysong1 = document.getElementById('mysong1');
-let icon1 = document.getElementById('icon1');
-
-icon1.onclick = function(){
-     if(mysong1.paused){
-        mysong1.play();
-        icon1.src = 'pause.png'
-     }
-     else{
-        mysong1.pause();
-        icon1.src = 'play.png'
-     }
-}
-
-let mysong2 = document.getElementById('mysong2');
-let icon2 = document.getElementById('icon2');
-
-icon2.onclick = function(){
-     if(mysong2.paused){
-        mysong2.play();
-        icon2.src = 'pause.png'
-     }
-     else{
-        mysong2.pause();
-        icon2.src = 'play.png'
-     }
-}
-
-let mysong3 = document.getElementById('mysong3');
-let icon3 = document.getElementById('icon3');
-
-icon3.onclick = function(){
-     if(mysong3.paused){
-        mysong3.play();
-        icon3.src = 'pause.png'
-     }
-     else{
-        mysong3.pause();
-        icon3.src = 'play.png'
-     }
-}
-
-let mysong4 = document.getElementById('mysong4');
-let icon4 = document.getElementById('icon4');
-
-icon4.onclick = function(){
-     if(mysong4.paused){
-        mysong4.play();
-        icon4.src = 'pause.png'
-     }
-     else{
-        mysong4.pause();
-        icon4.src = 'play.png'
-     }
-}
-
-let mysong5 = document.getElementById('mysong5');
-let icon5 = document.getElementById('icon5');
-
-icon5.onclick = function(){
-     if(mysong5.paused){
-        mysong5.play();
-        icon5.src = 'pause.png'
-     }
-     else{
-        mysong5.pause();
-        icon5.src = 'play.png'
-     }
-}
-
-let mysong6 = document.getElementById('mysong6');
-let icon6 = document.getElementById('icon6');
-
-icon6.onclick = function(){
-     if(mysong6.paused){
-        mysong6.play();
-        icon6.src = 'pause.png'
-     }
-     else{
-        mysong6.pause();
-        icon6.src = 'play.png'
-     }
-}
-
-</script>
-
+</div
+</div>
 
 
 
